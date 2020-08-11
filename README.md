@@ -37,8 +37,6 @@
 - [Upcoming Features / Improvements 🔗](#upcoming-features-/-improvements-)
 - [Showcase 🚀](#showcase-)
 - [Versão em Português :brazil:](#versao-em-portugues-)
-- [Contributors ✨](#contributors-)
-- [License 📄](#license-)
 
 ## Technology Stack 🛠️
 
@@ -62,6 +60,7 @@ Dependencies defined in package.json:
   - Display picture (using Instagram API) (optional)
   - About myself, my Interests, Goals and Hobbies
   - Things I'm good at (Skills)
+  - Resume button
 - Recent Projects (using GitHub API) (optional)
 - Footer
   - Acknowledgements (contributors)
@@ -88,15 +87,15 @@ You should have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/
 3. Open in editor and edit [src/editable-stuff/config.js](./src/editable-stuff/config.js) file.
 
 4. Add your resume as <resume.pdf> in place of [src/editable-stuff/resume.pdf](./src/editable-stuff/)
-5. Change URL in [package.json](./package.json) file:
+
+5. Edit [title](./public/index.html#L34) and meta [description](./public/index.html#L13) in [public/index.html](./public/index.html).
+6. Change URL in [package.json](./package.json) file:
 
    ```json
-   "homepage": "https://<your-username>.github.io/home"
+    "homepage": "https://<your-username>.github.io/home"
    ```
 
-   Or for custom deployment, refer [create-react-app.dev](https://create-react-app.dev/docs/deployment/)
-
-6. Edit [title](./public/index.html#L34) and meta [description](./public/index.html#L13) in [public/index.html](./public/index.html).
+   Or for deployment at custom domain, refer [create-react-app.dev](https://create-react-app.dev/docs/deployment/#step-1-add-homepage-to-packagejson)
 
 7. After editing run the following bash commands:
 
@@ -105,25 +104,22 @@ You should have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/
    npm start
    ```
 
-8. To deploy website run:
+8. To deploy website, run:
 
    ```bash
     npm run build
     npm run deploy
    ```
 
-   Or for custom deployment, refer [pages.js](./pages.js)
-
-   ```bash
-    npm run build
-    npm run custom-deploy
-   ```
+   Or for deployment at \<username>.github.io, refer [READMEdocs/custom-deployment.md](./READMEdocs/custom-deployment.md) and [pages.js](./pages.js)
 
 9. Congrats your site is up and running. To see it live, visit:
 
    ```https
      https://<your-username>.github.io/home
    ```
+
+   Next time if you make changes, repeat from step 8.
 
 Facing issues? Feel free to contact at hashirshoaeb@gmail.com.
 
@@ -212,57 +208,6 @@ Have you changed something in the code to create your own version? Feel free to 
 
 Esse projeto foi traduzido para português! Se você gostou dele e quer criar a sua própria versão, confira o repositório do [@tashima42](https://github.com/tashima42) em [https://github.com/Tashima42/home](https://github.com/Tashima42/home).
 Novas contribuições e revisões na tradução são muito bem vindas!
-
-## Contributors ✨
-
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://www.facebook.com/hashir.shoaeb">
-        <img src="https://avatars2.githubusercontent.com/u/35165481?v=4" width="100px" alt="" />
-        <br />
-        <sub><b>Hashir Shoaib</b></sub>
-      </a>
-      <br />
-    </td>
-    <td align="center">
-      <a href="https://github.com/iprithvitharun">
-        <img src="https://avatars2.githubusercontent.com/u/58725708?v=4" width="100px" alt="" />
-        <br />
-        <sub><b>Prithvi Tharun</b></sub>
-      </a>
-      <br />
-    </td>
-    <td align="center">
-      <a href="https://github.com/CodyJasonBennett">
-        <img src="https://avatars3.githubusercontent.com/u/23324155?s=460&v=4" width="100px" alt="" />
-        <br />
-        <sub><b>Cody Bennett</b></sub>
-      </a>
-      <br />
-    </td>
-    <td align="center">
-      <a href="https://github.com/yonis9">
-        <img src="https://avatars3.githubusercontent.com/u/42126841?s=460" width="100px" alt="" />
-        <br />
-        <sub><b>Yoni Sisso</b></sub>
-      </a>
-      <br />
-    </td>
-    <td align="center">
-      <a href="https://github.com/mallikarjuna-sharma">
-        <img src="https://avatars3.githubusercontent.com/u/40210749?s=460" width="100px" alt="" />
-        <br />
-        <sub><b>Mallikarjuna Sharma</b></sub>
-      </a>
-      <br />
-    </td>
-  </tr>
-</table>
-
-## License 📄
-
-[LGPL-3.0](https://www.gnu.org/licenses/lgpl-3.0.en.html)
 
 ## Stargazers over time
 
